@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BMB-Attendance-Tracker</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="takeAttendance">Take Attendance</string>
+    <string name="configureSeason">Configure Season</string>
+    <string name="season">2015 Season</string>
+    <string name="reports">View/Generate Reports</string>
+    <string name="title_activity_attendance_main">attendance_main</string>
+    <string name="title_activity_attendance_details">attendance_details</string>
+</resources>

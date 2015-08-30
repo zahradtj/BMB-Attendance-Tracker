@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zahradtj.bmb_attendance_tracker" >
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,6 +19,22 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".attendance_main"
+            android:label="@string/title_activity_attendance_main"
+            android:parentActivityName=".Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zahradtj.bmb_attendance_tracker.Home" />
+        </activity>
+        <activity
+            android:name=".attendance_details"
+            android:label="@string/title_activity_attendance_details"
+            android:parentActivityName=".attendance_main" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.zahradtj.bmb_attendance_tracker.attendance_main" />
         </activity>
     </application>
 
